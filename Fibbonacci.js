@@ -1,11 +1,10 @@
-const fibo = (n) => {
-  const fib = [0, 1]
+const FiboNacci = (n) => {
+  const fibo = [0, 1]
   for (let i = 2; i < n; i++){
-    fib[i] = fib[i-1] + fib[i-2]
+    fibo[i] = fibo[i-1] + fibo[i-2]
   }
-  return fib
-};
+  return fibo
+}
 
-console.log(fibo(2));
-console.log(fibo(5));
-console.log(fibo(7));
+console.log(FiboNacci(5))
+console.log(FiboNacci(9))
